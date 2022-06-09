@@ -6,17 +6,16 @@ import os
 class Config(object):
 
 	ABOUT_TXT = f"""
-**╭────[ 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 ]────⍟
-├🤖 𝐌ʏ 𝐍ᴀᴍᴇ : [Fɪʟᴇs Sᴛᴏʀᴇ Bᴏᴛ](https://t.me/{BOT_USERNAME})
-├👑 𝐎ᴡɴᴇʀ : [Hᴀᴘᴘʏ ⚡ Kɪᴅ](https://telegram.dog/happy_kid_sk)
-├😎 𝐃ᴇᴠs : [Lᴀsᴛ 🐲 Dʀᴏɢᴢ](https://telegram.dog/LastDrogz) 
+<b>╭────[ 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 ]────⍟
+├🤖 𝐌ʏ 𝐍ᴀᴍᴇ : 
+├👑 𝐎ᴡɴᴇʀ : <a href='https://telegram.dog/happy_kid_sk'>Hᴀᴘᴘʏ ⚡ Kɪᴅ</a>
+├😎 𝐃ᴇᴠs : <a href='https://telegram.dog/LastDrogz'>Lᴀsᴛ 🐲 Dʀᴏɢᴢ</a>
 ├📕 𝐋ɪʙʀᴀʀʏ : 𝐘ʀᴏɢʀᴀᴍ
 ├✏️ 𝐋ᴀɴɢᴜᴀɢᴇ : 𝐏ʏᴛʜᴏɴ 𝟹
 ├💾 𝐃ᴀᴛᴀ 𝐁ᴀsᴇ : 𝐌ᴏɴɢᴏ ᴅʙ
 ├🌀 𝐌ʏ 𝐒ᴇʀᴠᴇʀ : 𝐇ᴇʀᴏᴋᴜ
-├💡 Cʀᴇᴅɪᴛs : @AbirHasan2005
 ├📊 𝐁ᴜɪʟᴅ 𝐒ᴛᴀᴜs : 𝟷.𝟸.𝟶 [ 𝐁ᴇᴛᴀ ]              
-╰───────────────⍟ **
+╰───────────────⍟ </b>
 """
 	DONATE_TXT = f"""
 **💗 𝐓𝐡𝐚𝐧𝐤𝐬 𝐟𝐨𝐫 𝐬𝐡𝐨𝐰𝐢𝐧𝐠 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐢𝐧 𝐝𝐨𝐧𝐚𝐭𝐢𝐨𝐧
