@@ -70,8 +70,9 @@ async def start(b, m):
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
-        await m.reply_text(
-            text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
+        await m.reply_photo(
+            photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
+            caption='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton('Bots Channel', url='https://t.me/Discovery_Updates'), InlineKeyboardButton('Support Group', url='https://t.me/JoinOT')],
