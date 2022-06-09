@@ -50,8 +50,8 @@ async def start(b, m):
                 await b.send_message(
                     chat_id=m.chat.id,
                     text="Something went Wrong. Contact my [Support Group](https://t.me/kr_join).",
-                    parse_mode="markdown",
-                    disable_web_page_preview=True)
+                    parse_mode="markdown"
+                )
                 return
         await m.reply_photo(
             photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
