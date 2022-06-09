@@ -28,8 +28,7 @@ async def start(b, m):
                     await b.send_message(
                         chat_id=m.chat.id,
                         text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/kr_join).",
-                        parse_mode="markdown",
-                        disable_web_page_preview=True
+                        parse_mode="markdown"
                     )
                     return
             except UserNotParticipant:
@@ -63,8 +62,7 @@ async def start(b, m):
                     [InlineKeyboardButton("👥 BotList", url="https://t.me/joinchat/t1ko_FOJxhFiOThl"), InlineKeyboardButton("♻ Github", url="https://github.com/PredatorHackerzZ")],
                     [InlineKeyboardButton("About Meh ♐", url="https://t.me/TheTeleRoid")]
                 ]
-            ),
-            disable_web_page_preview=True
+            )
         )
     else:
         if Var.UPDATES_CHANNEL is not None:
