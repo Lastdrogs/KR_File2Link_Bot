@@ -54,7 +54,7 @@ async def start(b, m):
                 return
         await m.reply_photo(
             photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
-            caption= f"🙋 Hello!\n\nI am a Simple Telegram File to Public link generator bot.\n\nI can generate Direct URL of any Telegram Files Or Videos for Downloading & Online Streaming!!!\n\n☛ /help for More\n\nNB:🔞 Don't forward Porn Files to me, You will Get Permanent B A N.\n\nSend me any file & see the magic!",
+            caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [
