@@ -87,7 +87,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh 🔄",
-                                                     url=f"https://t.me/{BOT_USERNAME}?start=KRBotz_{usr_cmd}")
+                                                     url=f"https://t.me/all_test_by_kr_bot?start=KRBotz_{usr_cmd}")
                             ]
                         ]
                     ),
