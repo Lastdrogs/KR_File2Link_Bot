@@ -53,8 +53,10 @@ async def start(b, m):
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
-        await m.reply_text(
-            text="🙋 Hello!\n\nI am a Simple Telegram File to Public link generator bot.\n\nI can generate Direct URL of any Telegram Files Or Videos for Downloading & Online Streaming!!!\n\n☛ /help for More\n\nNB:🔞 Don't forward Porn Files to me, You will Get Permanent B A N.\n\nSend me any file & see the magic!",
+        await m.reply_photo(
+            photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
+            caption= f"🙋 Hello!\n\nI am a Simple Telegram File to Public link generator bot.\n\nI can generate Direct URL of any Telegram Files Or Videos for Downloading & Online Streaming!!!\n\n☛ /help for More\n\nNB:🔞 Don't forward Porn Files to me, You will Get Permanent B A N.\n\nSend me any file & see the magic!",
+            parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14")],
