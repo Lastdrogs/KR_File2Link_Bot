@@ -5,9 +5,10 @@ import os
 
 class Config(object):
 
+	BOT_USERNAME = os.environ.get("BOT_USERNAME")
 	ABOUT_TXT = f"""
 <b>╭────[ 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 ]────⍟
-├🤖 𝐌ʏ 𝐍ᴀᴍᴇ : 
+├🤖 𝐌ʏ 𝐍ᴀᴍᴇ : <a href='https://t.me/{BOT_USERNAME}'>𝐅𝐈𝐋𝐄𝐒 𝟐 𝐋𝐈𝐍𝐊 𝐁𝐎𝐓</a>
 ├👑 𝐎ᴡɴᴇʀ : <a href='https://telegram.dog/happy_kid_sk'>Hᴀᴘᴘʏ ⚡ Kɪᴅ</a>
 ├😎 𝐃ᴇᴠs : <a href='https://telegram.dog/LastDrogz'>Lᴀsᴛ 🐲 Dʀᴏɢᴢ</a>
 ├📕 𝐋ɪʙʀᴀʀʏ : 𝐘ʀᴏɢʀᴀᴍ
@@ -38,16 +39,21 @@ GᴏᴏɢʟᴇPᴀʏ / Pᴀʏᴛᴏɴ / PʜᴏɴPᴀʏ / PᴀʏPᴀʟ
 ⍟ Sʜᴀʀᴇ Aɴᴅ Sᴜᴘᴘᴏʀᴛ Us......!!! **
 """
 	HELP_TXT = """
-𝐇𝐎𝐖 𝐓𝐎 𝐆𝐄𝐓 𝐒𝐇𝐀𝐑𝐀𝐁𝐋𝐄 𝐋𝐈𝐍𝐊
+🎆 𝐇𝐎𝐖 𝐓𝐎 𝐔𝐒𝐄 𝐅𝐈𝐋𝐄𝐒 𝟐 𝐋𝐈𝐍𝐊 𝐁𝐎𝐓
+<b>
+🔘 Sᴇɴᴅ Mᴇ Aɴʏ Fɪʟᴇ (Oʀ) Mᴇᴅɪᴀ Fʀᴏᴍ Tᴇʟᴇɢʀᴀᴍ....
+🔘 Tʜɪs Bᴏᴛ Wɪʟʟ Sᴇɴᴅ Yᴏᴜ Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ
+🔘 Tʜɪs Lɪɴᴋ Cᴀɴ Bᴇ Usᴇᴅ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Oʀ Sᴛʀᴇᴀᴍ Fɪʟᴇs[Usɪɴɢ Exᴛᴇʀɴᴀʟ Vɪᴅᴇᴏ Pʟᴀʏᴇʀ] Tʜʀᴏᴜɢʜ Mʏ Sᴇʀᴠᴇʀ
+🔘 Fᴏʀ Sᴛʀᴇᴀᴍɪɴɢ Jᴜsᴛ Cᴏᴘʏ Tʜᴇ Mᴏɴᴏ Lɪɴᴋ Aɴᴅ Pᴀsᴛᴇ Iᴛ Iɴ Yᴏᴜʀ Vɪᴅᴇᴏ Pʟᴀʏᴇʀ Tᴏ Sᴛᴀʀᴛ Sᴛʀᴇᴀᴍɪɴɢ
+🔘 Tʜɪs Bᴏᴛ Sʜᴀʀᴇs Tʜᴇ Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ Tᴏ Yᴏᴜ.
+🔘 Tʜɪs Bᴏᴛ Is Aʟsᴏ Sᴜᴘᴘᴏʀᴛᴇᴅ Iɴ Cʜᴀɴɴᴇʟs. Aᴅᴅ Mᴇ Tᴏ Cʜᴀɴɴᴇʟ As Aᴅᴍɪɴ Tᴏ Mᴀᴋᴇ Mᴇ Wᴏʀᴋᴀʙʟᴇ...!
+🔘 Fᴏʀ Mᴏʀᴇ IɴFᴏʀᴍᴀᴛɪᴏɴ : @KR_Join
 
-**🔘  Sᴇɴᴅ Mᴇ Aɴʏ Fɪʟᴇ Oʀ Vɪᴅᴇᴏ I Wɪʟʟ Gɪᴠᴇ Yᴏᴜ A Pᴇʀᴍᴀɴᴇɴᴛ Sʜᴀʀᴀʙʟᴇ Lɪɴᴋ
-🔘 Tʜɪs Is Pᴇʀᴍᴀɴᴇɴᴛ Fɪʟᴇs Sᴛᴏʀᴇ Bᴏᴛ!
-
-🔘 Sᴇɴᴅ Mᴇ Aɴʏ Fɪʟᴇ I Wɪʟʟ Sᴀᴠᴇ Iᴛ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ. Aʟsᴏ Wᴏʀᴋs Fᴏʀ Cʜᴀɴɴᴇʟ. Aᴅᴅ Mᴇ Tᴏ Cʜᴀɴɴᴇʟ As Aᴅᴍɪɴ Wɪᴛʜ Eᴅɪᴛ Pᴇʀᴍɪssɪᴏɴ, I Wɪʟʟ Aᴅᴅ Sᴀᴠᴇ Uᴘʟᴏᴀᴅᴇᴅ Fɪʟᴇ Iɴ Cʜᴀɴɴᴇʟ & Aᴅᴅ Sʜᴀʀᴀʙʟᴇ Bᴜᴛᴛᴏɴ Lɪɴᴋ.
-
+🔹𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸
+🔞 𝐏𝐨𝐫𝐧 𝐂𝐨𝐧𝐭𝐞𝐧𝐭𝐬 𝐋𝐞𝐚𝐝𝐬 𝐘𝐨𝐮 𝐓𝐨 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐁𝐚𝐧 𝐅𝐫𝐨𝐦 𝐀𝐥𝐥 𝐁𝐨𝐭𝐬
 ️ Mᴀᴅᴇ Wɪᴛʜ ❣️ @KR_Botz & @BGM_LinkzZ 
 ⚜️ Bᴏᴛ Aɴʏ Issᴜᴇs Cᴏɴᴛᴀᴄᴛ Mᴇ
-@KR_Admin_bot **
+@KR_Admin_bot </b>
 """
 
 
