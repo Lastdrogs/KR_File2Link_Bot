@@ -54,7 +54,7 @@ async def start(b, m):
                 return
         await m.reply_photo(
             photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
-            caption=Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
+            caption=Config.HOME_TXT.format(cmd.from_user.first_name, cmd.from_user.id),
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [
