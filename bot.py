@@ -81,7 +81,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("📢 Uᴘᴅᴀᴛᴇ", url="https://t.me/KR_botz")
                     ],
                     [
-                        InlineKeyboardButton("📚 Aʙᴏᴜᴛ", callback_data="aboutbot"),
+                        InlineKeyboardButton("📚 Aʙᴏᴜᴛ", callback_data="about"),
                         InlineKeyboardButton("💡 Hᴇʟᴘ", callback_data="help")
                     ]
                 ]
