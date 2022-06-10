@@ -344,6 +344,4 @@ async def button(bot: Client, cmd: CallbackQuery):
     except QueryIdInvalid: pass
 
 
-StreamBot.run()
-
 
