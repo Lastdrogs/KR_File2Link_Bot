@@ -1,4 +1,5 @@
 # (1) @Lastdrogz
+
 import os
 from pyrogram.errors import (
     UserNotParticipant,
@@ -11,27 +12,27 @@ from configs import Config
 async def button(bot: Client, cmd: CallbackQuery):
 
     cb_data = cmd.data
-    if "about" in cb_data:
+    if "aboutbot" in cb_data:
         await cmd.message.edit(
-            Config.ABOUT_TXT,
+            Config.ABOUT_BOT_TEXT,
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="donate")
+                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
                     ],
                     [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
                     ]
                 ]
             )
         )
 
-    elif "donate" in cb_data:
+    elif "aboutdevs" in cb_data:
         await cmd.message.edit(
-            Config.DONATE_TXT,
+            Config.ABOUT_DEV_TEXT,
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -41,8 +42,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                                              url="https://telegram.dog/Lastdrogz")
                     ],
                     [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
                     ]
                 ]
             )
@@ -56,19 +57,19 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="donate")
+                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
                     ],
                     [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
                     ]
                 ]
             )
         )
 
-    elif "home" in cb_data:
+    elif "gotohome" in cb_data:
         await cmd.message.edit(
-            Config.HOME_TXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
+            Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -81,9 +82,19 @@ async def button(bot: Client, cmd: CallbackQuery):
                         InlineKeyboardButton("📢 Uᴘᴅᴀᴛᴇ", url="https://t.me/KR_botz")
                     ],
                     [
-                        InlineKeyboardButton("📚 Aʙᴏᴜᴛ", callback_data="about"),
+                        InlineKeyboardButton("📚 Aʙᴏᴜᴛ", callback_data="aboutbot"),
                         InlineKeyboardButton("💡 Hᴇʟᴘ", callback_data="help")
                     ]
                 ]
             )
         )
+
+    elif "closeMessage" in cb_data:
+        await cmd.message.delete(True)
+
+    try:
+        await cmd.answer()
+    except QueryIdInvalid: pass
+
+
+Bot.run()
