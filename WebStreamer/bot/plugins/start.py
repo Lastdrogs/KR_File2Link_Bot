@@ -6,7 +6,7 @@ from WebStreamer.vars import Var
 from WebStreamer.utils.human_readable import humanbytes
 from WebStreamer.utils.database import Database
 from pyrogram import filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
 from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 
@@ -253,3 +253,28 @@ async def about_handler(bot, message):
             ]
         )
     )
+
+@StreamBot.on_callback_query()
+async def button(bot: Client, cmd: CallbackQuery):
+
+    cb_data = cmd.data
+    if "aboutbot" in cb_data:
+        await cmd.message.edit(
+            Config.ABOUT_TXT,
+            parse_mode="Markdown",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
+                    ],
+                    [
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
+                    ]
+                ]
+            )
+        )
+
+
+
