@@ -7,7 +7,7 @@ from pyrogram.errors import (
 )
 from configs import Config
 
-@Bot.on_callback_query()
+@StreamBot.on_callback_query()
 async def button(bot: Client, cmd: CallbackQuery):
 
     cb_data = cmd.data
