@@ -182,24 +182,20 @@ async def help_handler(bot, message):
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
-    await message.reply_text(
-        text=Config.HELP_TXT, 
+    await message.reply_photo(
+        photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
+        caption=Config.HELP_TXT, 
   parse_mode="Markdown",
-        disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
+            [
                 [
-                    [
-                        InlineKeyboardButton("♡︎ Cᴏɴᴛᴀᴄᴛ 🧛‍♂️ Aᴅᴍɪɴ ♡︎", url='https://t.me/KR_Admin_Bot')
-                    ],
-                    [
-                        InlineKeyboardButton("👨‍💻 Mʏ Fᴀᴛʜᴇʀ", url="https://t.me/Lastdrogz"),
-                        InlineKeyboardButton("📢 Uᴘᴅᴀᴛᴇ", url="https://t.me/KR_botz")
-                    ],
-                    [
-                        InlineKeyboardButton("📚 Aʙᴏᴜᴛ", callback_data="aboutbot"),
-                        InlineKeyboardButton("💡 Hᴇʟᴘ", callback_data="help")
-                    ]
+                    InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
+                ],
+                [
+                    InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
+                    InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
                 ]
+            ]
         )
     )
 
@@ -243,14 +239,19 @@ async def about_handler(bot, message):
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
-    await message.reply_text(
-        text=Config.ABOUT_TXT,
+    await message.reply_photo(
+        photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
+        caption=Config.ABOUT_TXT,
   parse_mode="html",
-        disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://paypal.me/AbhishekKumarIN47")],
-                [InlineKeyboardButton("Need Private Bot ❓", url="https://t.me/PayForBotz")]
+                [
+                    InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
+                ],
+                [
+                    InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
+                    InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
+                ]
             ]
         )
     )
@@ -261,7 +262,7 @@ async def button(bot: Client, cmd: CallbackQuery):
     cb_data = cmd.data
     if "aboutbot" in cb_data:
         await cmd.message.edit(
-            Config.ABOUT_TXT,
+            Config.ABOUTCB_TXT,
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
