@@ -59,12 +59,15 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Pᴀʏ 💰 Aᴍᴏᴜɴᴛ",
-                                             url="https://telegram.dog/Lastdrogz")
+                        InlineKeyboardButton("♡︎ Cᴏɴᴛᴀᴄᴛ 🧛‍♂️ Aᴅᴍɪɴ ♡︎", url='https://t.me/KR_Admin_Bot')
                     ],
                     [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
+                        InlineKeyboardButton("👨‍💻 Mʏ Fᴀᴛʜᴇʀ", url="https://t.me/Lastdrogz"),
+                        InlineKeyboardButton("📢 Uᴘᴅᴀᴛᴇ", url="https://t.me/KR_botz")
+                    ],
+                    [
+                        InlineKeyboardButton("📚 Aʙᴏᴜᴛ", callback_data="aboutbot"),
+                        InlineKeyboardButton("💡 Hᴇʟᴘ", callback_data="help")
                     ]
                 ]
             )
@@ -183,11 +186,19 @@ async def help_handler(bot, message):
   parse_mode="Markdown",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("😇 Support", url="https://t.me/TeleRoid14")],
-                [InlineKeyboardButton("🚸 Powered By ", url="https://t.me/MoviesFlixers_DL"), InlineKeyboardButton("💰 Donate", url="https://t.me/PayForBotZ")],
-                [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/TheTeleRoid")]
-            ]
+                [
+                    [
+                        InlineKeyboardButton("♡︎ Cᴏɴᴛᴀᴄᴛ 🧛‍♂️ Aᴅᴍɪɴ ♡︎", url='https://t.me/KR_Admin_Bot')
+                    ],
+                    [
+                        InlineKeyboardButton("👨‍💻 Mʏ Fᴀᴛʜᴇʀ", url="https://t.me/Lastdrogz"),
+                        InlineKeyboardButton("📢 Uᴘᴅᴀᴛᴇ", url="https://t.me/KR_botz")
+                    ],
+                    [
+                        InlineKeyboardButton("📚 Aʙᴏᴜᴛ", callback_data="aboutbot"),
+                        InlineKeyboardButton("💡 Hᴇʟᴘ", callback_data="help")
+                    ]
+                ]
         )
     )
 
