@@ -7,7 +7,7 @@ class Config(object):
 
 	BOT_USERNAME = os.environ.get("BOT_USERNAME")
 	ABOUT_TXT = f"""
-**╭────[ 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 ]────⍟
+<b>╭────[ 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 ]────⍟
 ├🤖 𝐌ʏ 𝐍ᴀᴍᴇ : <a href='https://t.me/{BOT_USERNAME}'>𝐅𝐈𝐋𝐄𝐒 𝟐 𝐋𝐈𝐍𝐊 𝐁𝐎𝐓</a>
 ├👑 𝐎ᴡɴᴇʀ : <a href='https://telegram.dog/happy_kid_sk'>Hᴀᴘᴘʏ ⚡ Kɪᴅ</a>
 ├😎 𝐃ᴇᴠs : <a href='https://telegram.dog/LastDrogz'>Lᴀsᴛ 🐲 Dʀᴏɢᴢ</a>
@@ -16,7 +16,7 @@ class Config(object):
 ├💾 𝐃ᴀᴛᴀ 𝐁ᴀsᴇ : 𝐌ᴏɴɢᴏ ᴅʙ
 ├🌀 𝐌ʏ 𝐒ᴇʀᴠᴇʀ : 𝐇ᴇʀᴏᴋᴜ
 ├📊 𝐁ᴜɪʟᴅ 𝐒ᴛᴀᴜs : 𝟷.𝟸.𝟶 [ 𝐁ᴇᴛᴀ ]              
-╰───────────────⍟ **
+╰───────────────⍟ </b>
 """
 	DONATE_TXT = f"""
 ***💗 𝐓𝐡𝐚𝐧𝐤𝐬 𝐟𝐨𝐫 𝐬𝐡𝐨𝐰𝐢𝐧𝐠 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐢𝐧 𝐝𝐨𝐧𝐚𝐭𝐢𝐨𝐧
