@@ -145,6 +145,28 @@ async def start(b, m):
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Download Now", url=stream_link)]])
         )
 
+@StreamBot.on_callback_query()
+async def button(bot: Client, cmd: CallbackQuery):
+
+    cb_data = cmd.data
+    if "aboutbot" in cb_data:
+        await cmd.message.edit(
+            Config.ABOUT_TXT,
+            parse_mode="Markdown",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
+                    ],
+                    [
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
+                    ]
+                ]
+            )
+        )
+
 
 @StreamBot.on_message(filters.command('help') & filters.private & ~filters.edited)
 async def help_handler(bot, message):
@@ -258,28 +280,6 @@ async def about_handler(bot, message):
             ]
         )
     )
-
-@StreamBot.on_callback_query()
-async def button(bot: Client, cmd: CallbackQuery):
-
-    cb_data = cmd.data
-    if "aboutbot" in cb_data:
-        await cmd.message.edit(
-            Config.ABOUT_TXT,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
-                    ],
-                    [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
-                    ]
-                ]
-            )
-        )
 
 
 
