@@ -13,17 +13,17 @@ async def button(bot: Client, cmd: CallbackQuery):
     cb_data = cmd.data
     if "aboutbot" in cb_data:
         await cmd.message.edit(
-            Config.ABOUT_BOT_TEXT,
+            Config.ABOUT_TXT,
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
+                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="donate")
                     ],
                     [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
                     ]
                 ]
             )
@@ -31,7 +31,7 @@ async def button(bot: Client, cmd: CallbackQuery):
 
     elif "aboutdevs" in cb_data:
         await cmd.message.edit(
-            Config.ABOUT_DEV_TEXT,
+            Config.DONATE_TXT,
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -41,8 +41,8 @@ async def button(bot: Client, cmd: CallbackQuery):
                                              url="https://telegram.dog/Lastdrogz")
                     ],
                     [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
                     ]
                 ]
             )
@@ -56,19 +56,19 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="aboutdevs")
+                        InlineKeyboardButton("💸 Dᴏɴᴀᴛᴇ", callback_data="donate")
                     ],
                     [
-                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="gotohome"),
-                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="closeMessage")
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
                     ]
                 ]
             )
         )
 
-    elif "gotohome" in cb_data:
+    elif "home" in cb_data:
         await cmd.message.edit(
-            Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
+            Config.HOME_TXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
