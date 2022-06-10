@@ -11,7 +11,7 @@ from configs import Config
 async def button(bot: Client, cmd: CallbackQuery):
 
     cb_data = cmd.data
-    if "aboutbot" in cb_data:
+    if "about" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_TXT,
             parse_mode="Markdown",
@@ -29,7 +29,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             )
         )
 
-    elif "aboutdevs" in cb_data:
+    elif "donate" in cb_data:
         await cmd.message.edit(
             Config.DONATE_TXT,
             parse_mode="Markdown",
