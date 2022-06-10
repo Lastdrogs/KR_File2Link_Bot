@@ -56,11 +56,15 @@ async def start(b, m):
             photo="https://telegra.ph/file/e954574ef60c1790caa79.jpg",
             caption=Config.HOME_TXT.format(m.from_user.first_name, m.from_user.id),
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14")],
-                    [InlineKeyboardButton("👥 BotList", url="https://t.me/joinchat/t1ko_FOJxhFiOThl"), InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home")],
-                    [InlineKeyboardButton("About Meh ♐", url="https://t.me/TheTeleRoid")]
+                    [
+                        InlineKeyboardButton("Pᴀʏ 💰 Aᴍᴏᴜɴᴛ",
+                                             url="https://telegram.dog/Lastdrogz")
+                    ],
+                    [
+                        InlineKeyboardButton("⛺ Hᴏᴍᴇ", callback_data="home"),
+                        InlineKeyboardButton("🗑 Cʟᴏsᴇ", callback_data="close")
+                    ]
                 ]
             )
         )
