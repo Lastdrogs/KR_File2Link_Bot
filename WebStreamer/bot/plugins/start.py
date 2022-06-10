@@ -9,6 +9,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
 from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
+from pyrogram import Client
+
 Bot = Client(
     Config.BOT_USERNAME,
     bot_token=Config.BOT_TOKEN,
