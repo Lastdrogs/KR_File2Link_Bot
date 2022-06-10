@@ -1,6 +1,11 @@
-
-
-
+# (1) @Lastdrogz
+import os
+from pyrogram.errors import (
+    UserNotParticipant,
+    FloodWait,
+    QueryIdInvalid
+)
+from configs import Config
 
 @Bot.on_callback_query()
 async def button(bot: Client, cmd: CallbackQuery):
