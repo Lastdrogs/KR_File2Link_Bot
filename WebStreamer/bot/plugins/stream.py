@@ -1,4 +1,4 @@
-# (c) @EverythingSuckz | @AbirHasan2005 | @PredatorHackerzZ
+# (c) @happy | @Lastdrogz
 
 import asyncio
 from WebStreamer.bot import StreamBot
@@ -25,7 +25,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/kr_join).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -37,7 +37,7 @@ async def private_receive_handler(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("🔔 Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 🔔", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -47,7 +47,7 @@ async def private_receive_handler(c: Client, m: Message):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/kr_join).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -73,11 +73,11 @@ async def private_receive_handler(c: Client, m: Message):
         elif m.audio:
             file_name = f"{m.audio.file_name}"
 
-        msg_text = "**Your Link Generated!** 🤓\n\n📂 **File Name:** `{}`\n📦**File Size:** `{}`\n\n📥 **Download Link:** `{}`\n\n🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ\n\n© @TheTeleRoid"
-        await log_msg.reply_text(text=f"Requested by [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User ID:** `{m.from_user.id}`\n**Download Link:** {stream_link}\n\n🚸 @TheTeleRoid", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
+        msg_text = "**𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !** 🤓\n\n📂 ** Fɪʟᴇ Nᴀᴍᴇ :** `{}`\n\n📦**Fɪʟᴇ Sɪᴢᴇ :** `{}`\n\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** `{}`\n\n🚸** Nᴏᴛᴇ : Tʜɪs Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ , Nᴏᴛ Exᴘɪʀᴇᴅ**\n\n© **@KR_Botz**"
+        await log_msg.reply_text(text=f"Requested by [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User ID:** `{m.from_user.id}`\n**Download Link:** {stream_link}\n\n🚸 @KR_Botz", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥 Download Now", url=stream_link)]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥 Dᴏᴡɴʟᴏᴀᴅ Nᴏᴡ", url=stream_link)]]),
             quote=True
         )
     except FloodWait as e:
