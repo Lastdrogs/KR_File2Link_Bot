@@ -135,7 +135,7 @@ async def start(b, m):
                                      Var.PORT,
                                      get_msg.message_id)
 
-        msg_text = "**Your File Link Generated!** 🤓\n\n📂 **File Name:** `{}`\n📦**File Size:** `{}`\n\n📥 **Download Link:** `{}`\n\n🚸 Note: This Is a Permanent Link & Never Expire\n\n© @TheTeleRoid"
+        msg_text = "**𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !** 🤓\n\n📂 ** Fɪʟᴇ ɴᴀᴍᴇ :** `{}`\n\n📦**Fɪʟᴇ ꜱɪᴢᴇ :** `{}`\n\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** `{}`\n\n🚸** Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ , Nᴏᴛ Exᴘɪʀᴇᴅ**\n\n© **@KR_Botz**"
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
             parse_mode="Markdown",
