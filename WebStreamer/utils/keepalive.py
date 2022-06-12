@@ -4,7 +4,7 @@ import aiohttp
 import traceback
 from WebStreamer.vars import Var
 
-URL = f"https://{Var.FQDN}"
+Var.URL = f"https://{Var.FQDN}"
 
 
 async def ping_server():
