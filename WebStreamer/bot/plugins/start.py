@@ -1,7 +1,7 @@
 # (c) @AbirHasan2005 | @PredatorHackerzZ
 
 from WebStreamer.bot import StreamBot
-from configs import Config
+from configs import Config ,BOT_USERNAME
 from WebStreamer.vars import Var
 from WebStreamer.utils.human_readable import humanbytes
 from WebStreamer.utils.database import Database
@@ -11,8 +11,6 @@ from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 from pyrogram import Client
 
-
-    BOT_USERNAME = os.environ.get("BOT_USERNAME")
 
 @StreamBot.on_message(filters.command('start') & filters.private & ~filters.edited)
 async def start(b, m):
