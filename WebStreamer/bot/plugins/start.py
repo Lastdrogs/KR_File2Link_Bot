@@ -1,7 +1,7 @@
 # (c) @AbirHasan2005 | @PredatorHackerzZ
 
 from WebStreamer.bot import StreamBot
-from configs import Config ,BOT_USERNAME
+from configs import Config 
 from WebStreamer.vars import Var
 from WebStreamer.utils.human_readable import humanbytes
 from WebStreamer.utils.database import Database
