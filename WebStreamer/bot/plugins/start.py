@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram.errors import UserNotParticipant
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 from pyrogram import Client
-
+from configs import BOT_USERNAME
 
 
 @StreamBot.on_message(filters.command('start') & filters.private & ~filters.edited)
