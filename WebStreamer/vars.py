@@ -10,7 +10,7 @@ class Var(object):
     API_ID = int(getenv('API_ID'))
     API_HASH = str(getenv('API_HASH'))
     BOT_TOKEN = str(getenv('BOT_TOKEN'))
-    SESSION_NAME = str(getenv('SESSION_NAME', 'KR_File2link_Bot)
+    SESSION_NAME = str(getenv('SESSION_NAME', 'KRFile2linkBot)
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '2419200'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
