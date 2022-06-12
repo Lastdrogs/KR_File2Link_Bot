@@ -32,7 +32,7 @@ GᴏᴏɢʟᴇPᴀʏ / Pᴀʏᴛᴏɴ / PʜᴏɴPᴀʏ / PᴀʏPᴀʟ
  Oʀ Dᴏɴᴀᴛᴇ: Mᴇssᴀɢᴇ Mᴇ @LastDrogz ***
 """
 	HOME_TXT = """
-**⍟ Hᴇʟʟᴏ Mʏ Fʀɪᴇɴᴅ [{}](tg://user?id={}) ⍟ \n \n ⍟ Mʏ Nᴀᴍᴇ Iꜱ [Fɪʟᴇs 2 Lɪɴᴋ Bᴏᴛ](https://t.me/{BOT_USERNAME})
+**⍟ Hᴇʟʟᴏ Mʏ Fʀɪᴇɴᴅ [{}](tg://user?id={}) ⍟ \n \n ⍟ Mʏ Nᴀᴍᴇ Iꜱ Fɪʟᴇs 2 Lɪɴᴋ Bᴏᴛ
 ✌︎ I Aᴍ PᴏᴡᴇʀFᴜʟ 🧛‍♂️ Fɪʟᴇs 2 Lɪɴᴋ Bᴏᴛ  
  🚀 Sᴇᴇ Mʏ Pᴏᴡᴇʀ ⚡.....!!
 ⚜️ Sʜᴀʀᴇ Aɴᴅ Sᴜᴘᴘᴏʀᴛ Us 💖......!!!
