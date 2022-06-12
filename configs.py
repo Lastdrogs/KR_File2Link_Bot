@@ -32,7 +32,7 @@ GᴏᴏɢʟᴇPᴀʏ / Pᴀʏᴛᴏɴ / PʜᴏɴPᴀʏ / PᴀʏPᴀʟ
  Oʀ Dᴏɴᴀᴛᴇ: Mᴇssᴀɢᴇ Mᴇ @LastDrogz ***
 """
 	HOME_TXT = """
-**⍟ Hᴇʟʟᴏ Mʏ Fʀɪᴇɴᴅ [{}](tg://user?id={}) ⍟ \n \n ⍟ Mʏ Nᴀᴍᴇ Iꜱ Fɪʟᴇs 2 Lɪɴᴋ Bᴏᴛ
+**⍟ Hᴇʟʟᴏ Mʏ Fʀɪᴇɴᴅ [{}](tg://user?id={}) ⍟ \n \n ⍟ Mʏ Nᴀᴍᴇ Iꜱ [Fɪʟᴇs 2 Lɪɴᴋ Bᴏᴛ](https/t.me/Kr_botz)
 ✌︎ I Aᴍ PᴏᴡᴇʀFᴜʟ 🧛‍♂️ Fɪʟᴇs 2 Lɪɴᴋ Bᴏᴛ  
  🚀 Sᴇᴇ Mʏ Pᴏᴡᴇʀ ⚡.....!!
 ⚜️ Sʜᴀʀᴇ Aɴᴅ Sᴜᴘᴘᴏʀᴛ Us 💖......!!!
@@ -58,7 +58,7 @@ GᴏᴏɢʟᴇPᴀʏ / Pᴀʏᴛᴏɴ / PʜᴏɴPᴀʏ / PᴀʏPᴀʟ
 
 	ABOUTCB_TXT = """
 **╭────[ 𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 ]────⍟
-├🤖 𝐌ʏ 𝐍ᴀᴍᴇ : [Fɪʟᴇs Sᴛᴏʀᴇ Bᴏᴛ](https://t.me/{BOT_USERNAME})
+├🤖 𝐌ʏ 𝐍ᴀᴍᴇ : [Fɪʟᴇs Sᴛᴏʀᴇ Bᴏᴛ](https://t.me/KR_Botz)
 ├👑 𝐎ᴡɴᴇʀ : [Hᴀᴘᴘʏ ⚡ Kɪᴅ](https://telegram.dog/happy_kid_sk)
 ├😎 𝐃ᴇᴠs : [Lᴀsᴛ 🐲 Dʀᴏɢᴢ](https://telegram.dog/LastDrogz) 
 ├📕 𝐋ɪʙʀᴀʀʏ : 𝐘ʀᴏɢʀᴀᴍ
